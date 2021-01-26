@@ -145,11 +145,6 @@ $('.clear-cart').click(function () {
 
 function displayCart () {
     var cartArray = shoppingCart.listCart();
-    if(cartArray.length > 1){
-        alert(cartArray.length + ' Products Successfully Added');
-    } else if(cartArray.length != 0){
-        alert(cartArray.length + ' Product Successfully Added');
-    }
 
     var output = "";
     for (var i in cartArray) {
